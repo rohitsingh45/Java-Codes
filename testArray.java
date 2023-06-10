@@ -1,17 +1,23 @@
+import java.util.Scanner;
 class testArray{
-public int array(int main_array[])	        //Here main_array is local variable.
-{ int mini=main_array[0];
-for(int i=1; i<main_array.length; i++)
-	{	if(main_array[i] >mini)
-			{	mini=main_array[i];
+public int array(int arr[])
+{ int mini=arr[0];
+for(int i=1; i<arr.length; i++)
+	{	if(mini>arr[i])
+			{	mini=arr[i];
 			}
 	} return mini;
 }
 public static void main(String []args)
-{ int[] main_array={67,45,14,25,32}; 
+{ int[] arr; 
 int eww;
-testArray t1 = new testArray();
-eww=t1.array(main_array);	//Calling of instance method //through static method.
+Scanner sc =new Scanner(System.in);
+System.out.println("Enter the elements of array");
+for(int i=0; i<5; i++)
+{System.out.println("Enter the"+i+"th element of array"); 
+arr[i] = sc.nextInt();
+}
+eww=array(arr);
 System.out.println("The Minimum Value from the given array is:" + eww);
 }
 }

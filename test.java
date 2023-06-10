@@ -1,17 +1,8 @@
-class tasty{
-	public static void ram(){
-		int a=8;
-		a>>>=1;
-	System.out.println(a);
-	
-	}
+class test {
+static String firstname="Rohit";
+ static String lastname="Kumar";
+static String fullname=firstname+lastname;
+public static void main(String ram[])
+{ 	System.out.println(fullname);
 }
-class test extends tasty{
-	public static void ram(){
-		System.out.println("hello");
-		
-	}
-	public static void main(String[] args){
-		tasty.ram();
-	}
 }
