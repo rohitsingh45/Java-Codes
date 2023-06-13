@@ -14,7 +14,7 @@ class userDefinedException{
         height = sc.nextInt();
         if(height<150){
             try{
-            throw new MyException("You are not young");
+            throw (new MyException("You are not young"));
             }
             catch(MyException me){
                 System.out.println("User exceptions handled\n" + me);
