@@ -1,4 +1,4 @@
-class Student{
+class Student implements Cloneable{
     String name;
     int id;
 
@@ -12,11 +12,16 @@ class Student{
         this.id = ss.id;
     }
 
+    @Override
+    public Object clone() throws CloneNotSupportedException{
+        return (Student)super.clone();
+    }
+
 }
 
 class copyConstructor{
 
-    public static void main(String[] arsg){
+    public static void main(String[] arsg) throws CloneNotSupportedException{
         // System.out.println("Hello World!");
         Student s1 = new Student("Rohit",10820);
 
@@ -40,5 +45,15 @@ class copyConstructor{
 
         System.out.println(s3.name);
         System.out.println(s4.name);
+
+        // Deep copy
+        // Using cloneable interface...
+        Student s5 = new Student("Md",11217);
+        Student s6 = (Student)s5.clone();
+
+        s5.name = "Manas";
+
+        System.out.println(s5.name);
+        System.out.println(s6.name);
     }
 }
