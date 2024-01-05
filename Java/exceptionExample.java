@@ -6,12 +6,14 @@ class exceptionExample{
         try{
             System.out.println(10/0);
         }
-        catch(Exception ee){
+        catch (Exception ee) {
             System.out.println("I'm inside the cathch");
         }
-        catch(ArithmeticException ar){
-            System.out.println("I'm in arithmetic exception");
-        }
+        // Since child class exception is declared after the parent class exception so it is generating
+        // compile time error.
+        // catch(ArithmeticException ar){  
+        //     System.out.println("I'm in arithmetic exception");
+        // }
         finally{
             System.out.println("I'm inside the finally");
         }
