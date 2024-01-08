@@ -6,7 +6,7 @@ class abs2{
 		System.out.println("Hello Jee");
 	}
 	void hello(int kk){
-		boolean jj=yes;
+		boolean jj=true;
 		System.out.println("Hello sir"+jj);
 	}
 	public static void main(String[] args){

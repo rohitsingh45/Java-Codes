@@ -1,6 +1,3 @@
-package thread;
-import java.lang.*;
-
 
 class Main extends Thread{
 	@Override

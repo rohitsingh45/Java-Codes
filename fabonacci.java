@@ -1,4 +1,3 @@
-package Java;
 class fabonacci{
 	public static void main(String[] args){
 		int var1=0,var2=1,var3;
